@@ -1,8 +1,10 @@
 # Pomodoro Timer / Pomodoro Zamanlayıcı
 
-**TR:** Türkçe ve İngilizce arayüzlü, açık/koyu temalı, tek dosyalık Pomodoro zamanlayıcı. Kurulum, derleme adımı veya bağımlılık yok: `index.html` dosyasını tarayıcıda açmanız yeterli.
+**[Canlı demo / Live demo →](https://pomodoro-timer-begs.vercel.app)**
 
-**EN:** A single-file Pomodoro timer with an English/Turkish interface and light/dark themes. No install, no build step, no dependencies: open `index.html` in a browser.
+**TR:** Türkçe ve İngilizce arayüzlü, açık/koyu temalı Pomodoro zamanlayıcı. Kurulum, derleme adımı veya bağımlılık yok: saf HTML, CSS ve JavaScript.
+
+**EN:** A Pomodoro timer with an English/Turkish interface and light/dark themes. No install, no build step, no dependencies: plain HTML, CSS and JavaScript.
 
 ## Özellikler / Features
 
@@ -13,7 +15,8 @@
 - EN/TR dil düğmesi / EN/TR language switch
 - Cihaz ayarını izleyen açık/koyu tema düğmesi / Light/dark toggle that follows the device by default
 - Oturum bitince ses ve görsel uyarı; eylemler için kısa ses ipuçları / Chime and visual cue when a session ends, short sound cues for actions
-- Duyarlı (mobil uyumlu) düzen / Responsive layout
+- Dil, tema, görev metni, ayarlar ve çalışan geri sayım yenilemeden sonra korunur / Language, theme, task text, settings and the running countdown survive a refresh
+- Mobil uyumlu düzen / Responsive layout
 
 ## Klavye kısayolları / Keyboard shortcuts
 
@@ -47,14 +50,16 @@ Yeni bir dil veya metin eklemek için `js/translations.js` dosyasında her iki d
 
 ## Çalıştırma / Run locally
 
-`index.html` dosyasına çift tıklayın. Dosyalar birbirine göreli yollarla bağlı olduğu için klasörü bozmadan açın. / Double-click `index.html`. Keep the folder structure intact, since the files link to each other by relative paths.
+Depoyu indirin ve `index.html` dosyasına çift tıklayın. Dosyalar birbirine göreli yollarla bağlı olduğu için klasör yapısını bozmayın. / Download the repository and double-click `index.html`. Keep the folder structure intact, since the files link to each other by relative paths.
 
-## GitHub Pages ile yayınlama / Publish with GitHub Pages
+```bash
+git clone https://github.com/begs44/PomodoroTimer.git
+cd PomodoroTimer
+```
 
-1. Dosyaları bir depoya yükleyin (`index.html` kök klasörde olmalı). / Upload the files to a repository (`index.html` at the root).
-2. **Settings → Pages → Build and deployment** bölümünde **Source** olarak **Deploy from a branch** seçin. / Under **Settings → Pages → Build and deployment**, choose **Deploy from a branch**.
-3. Branch olarak `main`, klasör olarak `/ (root)` seçip kaydedin. / Select `main` and `/ (root)`, then save.
-4. Site birkaç dakika içinde `https://<kullanıcı-adı>.github.io/<depo-adı>/` adresinde yayına girer. / The site goes live at `https://<username>.github.io/<repo-name>/` within a few minutes.
+## Yayınlama / Deployment
+
+Site [Vercel](https://vercel.com) üzerinde yayında. GitHub deposuna her `git push` yapıldığında site otomatik güncellenir. / The site is hosted on Vercel and updates automatically on every `git push` to the GitHub repository.
 
 ## Veriler nerede saklanır? / Where is data stored?
 
