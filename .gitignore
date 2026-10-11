@@ -1,0 +1,15 @@
+# Operating system
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors and IDEs
+.vs/
+.vscode/
+.idea/
+*.suo
+*.user
+
+# Dependencies and builds (none yet)
+node_modules/
+dist/
